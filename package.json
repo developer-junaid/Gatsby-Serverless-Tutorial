@@ -1,0 +1,12 @@
+{
+  "name": "gatsby-serverless-tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/developer-junaid/Gatsby-Serverless-Tutorial.git",
+  "author": "developer-junaid <qjunaid623@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
