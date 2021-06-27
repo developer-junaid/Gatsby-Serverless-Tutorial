@@ -4,8 +4,13 @@ import React, { useEffect } from "react";
 import netlifyIdentity from "netlify-identity-widget";
 
 // Theme-ui
-import { Container, Heading, Button, Flex } from "theme-ui";
+import { Container } from "theme-ui";
 
+// Components
+import Nav from "./../components/Nav";
+import HomeContent from "./../components/HomeContent";
+
+// Home
 const Home = (props) => {
   useEffect(() => {
     // Initialize netlify-identity
@@ -14,17 +19,8 @@ const Home = (props) => {
 
   return (
     <Container>
-      <Flex sx={{ flexDirection: "column", padding: 3 }}>
-        <Heading as="h1">Get Stuff Done</Heading>
-        <Button
-          sx={{ marginTop: 2, cursor: "pointer" }}
-          onClick={() => {
-            netlifyIdentity.open();
-          }}
-        >
-          Log In
-        </Button>
-      </Flex>
+      <Nav />
+      <HomeContent />
     </Container>
   );
 };
