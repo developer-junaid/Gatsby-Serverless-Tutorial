@@ -1,9 +1,22 @@
 import React from "react";
 
+// Theme-ui
+import { Container, Heading, Button, Flex } from "theme-ui";
+
 const Home = (props) => (
-  <div>
-    <h1>Our Site</h1>
-  </div>
+  <Container>
+    <Flex sx={{ flexDirection: "column", padding: 3 }}>
+      <Heading as="h1">Get Stuff Done</Heading>
+      <Button
+        sx={{ marginTop: 2, cursor: "pointer" }}
+        onClick={() => {
+          alert("clicked");
+        }}
+      >
+        Log In
+      </Button>
+    </Flex>
+  </Container>
 );
 
 export default Home;
